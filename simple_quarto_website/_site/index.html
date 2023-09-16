@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>simple_quarto_website</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">simple_quarto_website</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#continent" id="toc-continent" class="nav-link active" data-scroll-target="#continent">CONTINENT</a>
+  <ul class="collapse">
+  <li><a href="#countries" id="toc-countries" class="nav-link" data-scroll-target="#countries">Countries</a>
+  <ul class="collapse">
+  <li><a href="#cities" id="toc-cities" class="nav-link" data-scroll-target="#cities">Cities</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">simple_quarto_website</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>This is a Quarto website.</p>
+<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a></p>
+<section id="continent" class="level1">
+<h1>CONTINENT</h1>
+<p>Lorem ipsum dolor sit amet,<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<section id="countries" class="level2">
+<h2 class="anchored" data-anchor-id="countries">Countries</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p>Ac ut consequat semper viverra nam. Molestie ac feugiat sed lectus vestibulum.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> Netus et malesuada fames ac. Vitae elementum curabitur vitae nunc sed velit dignissim sodales. Enim eu turpis egestas pretium aenean pharetra magna ac placerat. Diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus. Augue maurisggg augue neque gravida in fermentum. Sapien et ligula ullamcorper malesuada proin libero nunc consequat. <span class="citation" data-cites="alber1993metric">(<a href="#ref-alber1993metric" role="doc-biblioref">Alber 1993</a>)</span>. Suspendisse sed nisi lacus sed viverra. Id nibh tortor id aliquet lectus proin nibh nisl. adipiscing diam donec. Mollis aliquam ut porttitor leo a diam sollicitudin tempor id. Eros donec ac odio tempor orci dapibus ultrices.</p>
+</div><div class="column" style="width:20%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:40%;">
+<p>‘Praesent tristique magna sit amet purus. Sodales neque sodales ut etiam. Vitae turpis massa sed elementum tempus’. Consequat nisl vel pretium lectus quam id leo in. Proin libero nunc consequat interdum varius sit amet mattis. Purus sit amet luctus venenatis lectus magna fringilla. Id diam vel quam elementum pulvinar. Eu volutpat odio facilisis mauris sit amet massa vitae tortor. Consectetur a erat nam at lectus urna duis. Porttitor massa id neque aliquam vestibulum morbi blandit cursus risus. Lorem donec massa sapien faucibus et molestie ac. Netus et malesuada fames ac. Enim ut sem viverra aliquet eget sit amet tellus.</p>
+</div>
+</div>
+<p>tum curabitur vitae nunc sed velit dignissim sodales. ‘Enim eu turpis egestas pretium aenean pharetra magna ac placerat.’ Diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus. Augue mauris augue neque gravida in fermentum. Sapien et ligula ullamcorper malesuada proin libero nunc consequat. Suspendisse sed nisi lacus sed viverra. Id nibh tortor id aliquet lectus proin nibh nisl.</p>
+<table class="table">
+<caption>In hac habitasse platea dictumst quisque sagittis purus sit amet. Pulvinar neque laoreet suspendisse interdum consectetur libero. Equation to find final solution is: <span class="math display">\[MQC = vrc^{2}+chj*sqrt{2}\]</span></caption>
+<thead>
+<tr class="header">
+<th>before</th>
+<th style="text-align: left;">after</th>
+<th style="text-align: right;">monday</th>
+<th style="text-align: center;">sunday</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>93</td>
+<td style="text-align: left;">25</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: center;">74</td>
+</tr>
+<tr class="even">
+<td>64</td>
+<td style="text-align: left;">385</td>
+<td style="text-align: right;">264</td>
+<td style="text-align: center;">588</td>
+</tr>
+<tr class="odd">
+<td>14</td>
+<td style="text-align: left;">87</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: center;">8</td>
+</tr>
+</tbody>
+</table>
+<section id="cities" class="level3">
+<h3 class="anchored" data-anchor-id="cities">Cities</h3>
+<p>Vivamus at augue eget arcu dictum varius duis at consectetur. &lt; Elementum sagittis vitae et leo duis ut diam quam. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar.&gt; Simple equation is <span class="math inline">\(IMM = 30^{9}+rc^{2}+sqrt{2}\)</span> . Nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Id nibh tortor id aliquet lectus proin nibh. {Quis commodo odio aenean sed adipiscing diam donec adipiscing}.</p>
+<ul>
+<li>Justo donec enim diam vulputate ut pharetra sit amet aliquam.</li>
+<li>Pellentesque massa placerat duis ultricies lacus sed. Eros donec ac odio tempor orci dapibus.
+<ul>
+<li>Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam.</li>
+<li>Dignissim convallis aenean et tortor at. Laoreet suspendisse interdum consectetur libero id</li>
+</ul></li>
+<li>faucibus nisl tincidunt. Lorem donec massa sapien faucibus et molestie ac feugiat.
+<ul>
+<li>Cursus metus aliquam eleifend mi in nulla posuere.</li>
+<li>Tellus in metus vulputate eu scelerisque felis imperdiet proin.</li>
+</ul></li>
+<li>Sit amet venenatis urna cursus eget nunc. Pellentesque diam volutpat commodo sed egestas.
+<ul>
+<li>In tellus integer feugiat scelerisque varius morbi.</li>
+<li>Posuere morbi leo urna molestie. Euismod elementum nisi quis eleifend quam. Vulputate eu scelerisque felis imperdiet proin fermentum. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed. Magna fringilla urna porttitor rhoncus dolor purus non enim praesent. Dohek Gari <span class="citation" data-cites="ghoshal2020forward">(<a href="#ref-ghoshal2020forward" role="doc-biblioref">Ghoshal and Michalska 2020</a>)</span>. Arcu risus quis varius quam. Ornare arcu odio ut sem nulla pharetra diam. Justo nec ultrices dui sapien eget mi. Cursus risus at ultrices mi tempus imperdiet nulla malesuada pellentesque. Eget velit aliquet sagittis id consectetur purus. Pandoc’s Markdown allows footnotes, using the following syntax:</li>
+</ul></li>
+</ul>
+<p>Tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Suspendisse ultrices gravida dictum fusce. Aliquam malesuada bibendum arcu vitae. Ipsum consequat nisl vel pretium lectus quam id leo. Ultricies leo integer malesuada nunc vel. Scelerisque eleifend donec pretium vulputate sapien. Mus mauris vitae ultricies leo.</p>
+<div id="fig-idriss" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/my_image.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;1: IDRISS</figcaption>
+</figure>
+</div>
+<p>Urna neque viverra justo nec ultrices dui sapien eget mi. Ipsum consequat nisl vel pretium lectus quam id leo in. Hac habitasse platea dictumst quisque sagittis purus sit amet. Nunc sed augue lacus viverra vitae congue eu. Nisl suscipit adipiscing bibendum est ultricies integer quis auctor.</p>
+<div id="fig-soccer" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/cameroonian_soccer_team.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;2: Soccer Team</figcaption>
+</figure>
+</div>
+<p>Purus sit amet volutpat consequat mauris nunc congue nisi vitae. At erat pellentesque adipiscing commodo elit at imperdiet. Condimentum mattis pellentesque id nibh tortor. Porttitor leo a diam sollicitudin tempor id eu nisl.</p>
+<p>“Great Mike Tyson”</p>
+<p>‘Hiro Francis Ngannou!’</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/KkxjWhTEvP4?start=100" title="Tyson and Ngannou" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p>Vestibulum lectus mauris ultrices eros in cursus turpis. Suscipit tellus mauris a diam. Nunc faucibus a pellentesque sit amet. Interdum velit euismod in pellentesque massa placerat duis. Pulvinar neque laoreet suspendisse interdum consectetur libero id. Eu volutpat odio facilisis mauris sit amet massa vitae. Ac turpis egestas integer eget. Dignissim enim sit amet venenatis urna cursus eget nunc. Mattis aliquam faucibus purus in massa. Lacus viverra vitae congue eu. Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. Pretium nibh ipsum consequat nisl vel pretium lectus quam id. Urna et pharetra pharetra massa.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  A[Born] --&gt; B(school)
+  B --&gt; C{Travel}
+  C --&gt; D[USA]
+  C --&gt; E[Rich]
+</pre>
+</div>
+</div>
+</div>
+</div>
+<p>Morbi blandit cursus risus at ultrices mi. Turpis massa tincidunt dui ut. Sit amet justo donec enim diam vulputate ut pharetra. Erat pellentesque adipiscing commodo elit at. Nulla pharetra diam sit amet. Tellus elementum sagittis vitae et leo duis. Nec dui nunc mattis enim ut tellus. Pulvinar neque laoreet suspendisse interdum consectetur.</p>
+
+
+
+</section>
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-alber1993metric" class="csl-entry" role="listitem">
+Alber, Ya I. 1993. <span>“Metric and Generalized Projection Operators in Banach Spaces: Properties and Applications.”</span> <em>arXiv Preprint Funct-an/9311001</em>.
+</div>
+<div id="ref-ghoshal2020forward" class="csl-entry" role="listitem">
+Ghoshal, Debarshi Patanjali, and Hannah Michalska. 2020. <span>“Forward-Backward Kernel-Based State and Parameter Estimation for Linear Systems of Arbitrary Order.”</span> <em>arXiv Preprint arXiv:2012.09033</em>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Here is the footnote.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Here’s one with multiple blocks.</p>
+<p>Subsequent paragraphs are indented to show that they belong to the previous footnote.</p>
+<pre><code>{ estie. Euismod elementum nisi quis eleifend quam. Vulputate eu scelerisque felis imperdie}</code></pre>
+<p>Thequisque non tellus. Ultricies mi quis hendrerit dolor magna. Augue mauris augue neque gravida. Elementum eu facilisis sed odio morbi quis commodo. Purus viverra accumsan in nisl nisi scel.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Here is the footnote.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

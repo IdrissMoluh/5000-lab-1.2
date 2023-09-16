@@ -1,0 +1,135 @@
+---
+title: "simple_quarto_website"
+bibliography: reference.bib
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-title: Table of contents
+    toc-expand: 2
+    toc-location: left
+---
+
+This is a Quarto website.
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>
+
+
+
+
+# CONTINENT
+  Lorem ipsum dolor sit amet,[^1] consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.[^longnote] Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    
+## Countries
+
+:::: {.columns}
+
+::: {.column width="40%"}
+ Ac ut consequat semper viverra nam. Molestie ac feugiat sed lectus vestibulum.[^1] Netus et malesuada fames ac. Vitae elementum curabitur vitae nunc sed velit dignissim sodales. Enim eu turpis egestas pretium aenean pharetra magna ac placerat. Diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus. Augue maurisggg augue neque gravida in fermentum. Sapien et ligula ullamcorper malesuada proin libero nunc consequat. [@alber1993metric].
+ Suspendisse sed nisi lacus sed viverra. Id nibh tortor id aliquet lectus proin nibh nisl.
+adipiscing diam donec. Mollis aliquam ut porttitor leo a diam sollicitudin tempor id. Eros donec ac odio tempor orci dapibus ultrices. 
+:::
+
+::: {.column width="20%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="40%"}
+'Praesent tristique magna sit amet purus. Sodales neque sodales ut etiam. Vitae turpis massa sed elementum tempus'. Consequat nisl vel pretium lectus quam id leo in. Proin libero nunc consequat interdum varius sit amet mattis. Purus sit amet luctus venenatis lectus magna fringilla. Id diam vel quam elementum pulvinar. Eu volutpat odio facilisis mauris sit amet massa vitae tortor. Consectetur a erat nam at lectus urna duis. Porttitor massa id neque aliquam vestibulum morbi blandit cursus risus. Lorem donec massa sapien faucibus et molestie ac. Netus et malesuada fames ac. Enim ut sem viverra aliquet eget sit amet tellus.
+:::
+
+::::
+
+  tum curabitur vitae nunc sed velit dignissim sodales. 'Enim eu turpis egestas pretium aenean pharetra magna ac placerat.' Diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus. Augue mauris augue neque gravida in fermentum. Sapien et ligula ullamcorper malesuada proin libero nunc consequat. Suspendisse sed nisi lacus sed viverra. Id nibh tortor id aliquet lectus proin nibh nisl.
+  
+| before  | after | monday | sunday |
+|---------|:----- |------: |:------:|
+| 93      | 25    |    12  |   74   |
+| 64      | 385   |   264  |  588   |
+| 14      | 87    |     1  |   8    |
+
+: In hac habitasse platea dictumst quisque sagittis purus sit amet. Pulvinar neque laoreet suspendisse interdum consectetur libero.
+Equation to find final solution is: $$MQC = vrc^{2}+chj*sqrt{2}$$
+    
+### Cities
+  Vivamus at augue eget arcu dictum varius duis at consectetur. < Elementum sagittis vitae et leo duis ut diam quam. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar.> Simple equation is  $IMM = 30^{9}+rc^{2}+sqrt{2}$ .
+  Nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Id nibh tortor id aliquet lectus proin nibh. {Quis commodo odio aenean sed adipiscing diam donec adipiscing}. 
+  
+* Justo donec enim diam vulputate ut pharetra sit amet aliquam.
+* Pellentesque massa placerat duis ultricies lacus sed. Eros donec ac odio tempor orci dapibus.
+  + Tellus rutrum tellus pellentesque eu tincidunt tortor aliquam. 
+  + Dignissim convallis aenean et tortor at. Laoreet suspendisse interdum consectetur libero id 
+* faucibus nisl tincidunt. Lorem donec massa sapien faucibus et molestie ac feugiat. 
+  + Cursus metus aliquam eleifend mi in nulla posuere.
+  + Tellus in metus vulputate eu scelerisque felis imperdiet proin.
+* Sit amet venenatis urna cursus eget nunc. Pellentesque diam volutpat commodo sed egestas. 
+  + In tellus integer feugiat scelerisque varius morbi. 
+  + Posuere morbi leo urna molestie. Euismod elementum nisi quis eleifend quam. 
+Vulputate eu scelerisque felis imperdiet proin fermentum. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed. Magna fringilla urna porttitor rhoncus dolor purus non enim praesent. Dohek Gari [@ghoshal2020forward]. 
+  Arcu risus quis varius quam. Ornare arcu odio ut sem nulla pharetra diam. Justo nec ultrices dui sapien eget mi. Cursus risus at ultrices mi tempus imperdiet nulla malesuada pellentesque. Eget velit aliquet sagittis id consectetur purus.
+Pandoc’s Markdown allows footnotes, using the following syntax:
+
+
+
+[^1]: Here is the footnote.
+
+[^longnote]: Here's one with multiple blocks.
+
+    Subsequent paragraphs are indented to show that they
+belong to the previous footnote.
+
+        { estie. Euismod elementum nisi quis eleifend quam. Vulputate eu scelerisque felis imperdie}
+
+    Thequisque non tellus. Ultricies mi quis hendrerit dolor magna. Augue mauris augue neque gravida. Elementum eu facilisis sed odio morbi quis commodo. Purus viverra accumsan in nisl nisi scel.
+    
+    
+
+
+Tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Suspendisse ultrices gravida dictum fusce. Aliquam malesuada bibendum arcu vitae. Ipsum consequat nisl vel pretium lectus quam id leo. Ultricies leo integer malesuada nunc vel. Scelerisque eleifend donec pretium vulputate sapien. Mus mauris vitae ultricies leo.
+
+
+![IDRISS](images/my_image.png){width=300, #fig-idriss}
+
+
+
+
+Urna neque viverra justo nec ultrices dui sapien eget mi. Ipsum consequat nisl vel pretium lectus quam id leo in. Hac habitasse platea dictumst quisque sagittis purus sit amet. Nunc sed augue lacus viverra vitae congue eu. Nisl suscipit adipiscing bibendum est ultricies integer quis auctor. 
+
+
+![Soccer Team](images/cameroonian_soccer_team.png){width=300, #fig-soccer}
+
+Purus sit amet volutpat consequat mauris nunc congue nisi vitae. At erat pellentesque adipiscing commodo elit at imperdiet. Condimentum mattis pellentesque id nibh tortor. Porttitor leo a diam sollicitudin tempor id eu nisl. 
+
+
+
+
+"Great Mike Tyson"
+
+'Hiro Francis Ngannou!'
+
+
+{{< video https://www.youtube.com/watch?v=KkxjWhTEvP4
+    title="Tyson and Ngannou"
+    start="100"
+    aspect-ratio="18x9" >}}
+    
+    
+    
+Vestibulum lectus mauris ultrices eros in cursus turpis. Suscipit tellus mauris a diam. Nunc faucibus a pellentesque sit amet. Interdum velit euismod in pellentesque massa placerat duis. Pulvinar neque laoreet suspendisse interdum consectetur libero id. Eu volutpat odio facilisis mauris sit amet massa vitae. Ac turpis egestas integer eget. Dignissim enim sit amet venenatis urna cursus eget nunc. Mattis aliquam faucibus purus in massa. Lacus viverra vitae congue eu. Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. Pretium nibh ipsum consequat nisl vel pretium lectus quam id. Urna et pharetra pharetra massa.
+
+
+```{mermaid}
+flowchart LR
+  A[Born] --> B(school)
+  B --> C{Travel}
+  C --> D[USA]
+  C --> E[Rich]
+```
+
+
+Morbi blandit cursus risus at ultrices mi. Turpis massa tincidunt dui ut. Sit amet justo donec enim diam vulputate ut pharetra. Erat pellentesque adipiscing commodo elit at. Nulla pharetra diam sit amet. Tellus elementum sagittis vitae et leo duis. Nec dui nunc mattis enim ut tellus. Pulvinar neque laoreet suspendisse interdum consectetur.
+    
+```{r}
+
+
+```
