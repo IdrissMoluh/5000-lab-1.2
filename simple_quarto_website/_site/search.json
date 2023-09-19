@@ -58,9 +58,9 @@
   {
     "objectID": "slides/slides.html",
     "href": "slides/slides.html",
-    "title": "Presentation",
+    "title": "GIFLNDL",
     "section": "",
-    "text": "Vestibulum lectus mauris ultrices eros in cursus turpis.(Ghoshal and Michalska 2020) Suscipit tellus mauris a diam. Vestibulum lectus mauris ultrices eros in cursus turpis. Suscipit tellus mauris a diam. Nunc faucibus a pellentesque sit amet. Interdum velit euismod in pellentesque massa placerat duis."
+    "text": "Vestibulum lectus mauris ultrices eros in cursus turpis. [alber1993metric] Suscipit tellus mauris a diam. Vestibulum lectus mauris ultrices eros in cursus turpis. Suscipit tellus mauris a diam. Nunc faucibus a pellentesque sit amet. Interdum velit euismod in pellentesque massa placerat duis."
   },
   {
     "objectID": "slides/slides.html#giflndl",
@@ -72,15 +72,22 @@
   {
     "objectID": "slides/slides.html#knhrp",
     "href": "slides/slides.html#knhrp",
-    "title": "Presentation",
+    "title": "GIFLNDL",
     "section": "KNHRP",
-    "text": "KNHRP\nEu volutpat odio facilisis mauris sit amet massa vitae.Mattis aliquam faucibus purus in massa. Lacus viverra vitae congue eu. Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo.Tempus egestas sed sed risus pretium. Dui id ornare arcu odio. Eget nullam non nisi est sit amet.\n\nfrom matplotlib import pyplot as plt\nimport random\n\npoints_count = 10\ncolor = \"blue\"\nx = [random.gauss(0, 1) for _ in range(points_count)]\ny = [random.gauss(0, 1) for _ in range(points_count)]\n\nplt.figure(figsize=(10, 7))\n_ = plt.plot(x, y, '.', markersize=14, color=color)"
+    "text": "KNHRP\nEu volutpat odio facilisis mauris sit amet massa vitae.Mattis aliquam faucibus purus in massa. Lacus viverra vitae congue eu. Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo.Tempus egestas sed sed risus pretium. Dui id ornare arcu odio. Eget nullam non nisi est sit amet.\n\nfrom matplotlib import pyplot as plt\nimport random\n\npoints_count = 10\ncolor = \"blue\"\nx = [random.gauss(0, 1) for _ in range(points_count)]\ny = [random.gauss(0, 1) for _ in range(points_count)]\n\nplt.figure(figsize=(7, 5))\n_ = plt.plot(x, y, '.', markersize=12, color=color)"
   },
   {
     "objectID": "slides/slides.html#mrhgf",
     "href": "slides/slides.html#mrhgf",
-    "title": "Presentation",
+    "title": "GIFLNDL",
     "section": "MRHGF",
-    "text": "MRHGF\nPretium nibh ipsum consequat nisl vel pretium lectus quam id."
+    "text": "MRHGF\nPretium nibh ipsum consequat nisl vel pretium lectus quam id. Laoreet suspendisse interdum consectetur libero. Fermentum dui faucibus in ornare quam viverra orci sagittis eu Feugiat nibh sed pulvinar proin.\n ."
+  },
+  {
+    "objectID": "about.html#part-1.1",
+    "href": "about.html#part-1.1",
+    "title": "About",
+    "section": "PART 1.1",
+    "text": "PART 1.1\nAdipiscing elit ut aliquam purus sit. Cras adipiscing enim eu turpis egestas pretium aenean. Nam libero justo laoreet sit amet cursus sit amet. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Donec enim diam vulputate ut pharetra sit amet aliquam. Dolor sit amet consectetur adipiscing elit duis tristique sollicitudin nibh. Ac odio tempor orci dapibus ultrices in iaculis nunc. Sagittis orci a scelerisque purus semper eget. Bibendum arcu vitae elementum curabitur vitae nunc.\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n# Create a Figure with 2 rows and 2 columns of subplots:\nfig, ax = plt.subplots(2, 2)\nx = np.linspace(0, 5, 100)\n# Index 4 Axes arrays in 4 subplots within 1 Figure: \nax[0, 0].plot(x, np.sin(x), 'g') #row=0, column=0\nax[1, 0].plot(range(100), 'b') #row=1, column=0\nax[0, 1].plot(x, np.cos(x), 'r') #row=0, column=1\nax[1, 1].plot(x, np.tan(x), 'k') #row=1, column=1\nplt.show()\n\n\n\n\n\nPART 1.1.1\nSed felis eget velit aliquet sagittis id consectetur. Amet justo donec enim diam. Vel risus commodo viverra maecenas. Pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper. Libero justo laoreet sit amet cursus. Aliquam eleifend mi in nulla. Suspendisse sed nisi lacus sed viverra tellus in hac habitasse. Arcu odio ut sem nulla pharetra diam sit amet. Lacus sed viverra tellus in hac habitasse. Dolor morbi non arcu risus quis varius quam quisque id. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus."
   }
 ]
